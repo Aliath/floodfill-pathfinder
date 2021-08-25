@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Floodfill Pathfinder</title>
+</head>
+<body>
+  <div class="instruction">
+    <div class="left">use left click to set collision</div>
+    <div class="right">use left click + shift to unset collision</div>
+  </div>
+  <canvas class="canvas" width="800" height="600"></canvas>
+  <div class="buttons">
+    <button class="button" id="start-button">find path</button>
+    <button class="button button--red" id="reset-cols-button">reset cols</button>
+    <button class="button button--red" id="reset-result-button">reset result</button>
+  </div>
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .canvas {
+      box-shadow: 0 0 0 1px #2c3e50;
+      margin: 24px 0;
+    }
+
+    .instruction {
+      width: 800px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .left {
+      color: #c0392b;
+    }
+
+    .right {
+      color: #27ae60;
+    }
+
+    .button {
+      font: 15px 'Roboto', sans-serif;
+      font-weight: bold;
+      border: 0;
+      border-radius: 24px;
+      background-color: #2c3e50;
+      height: 38px;
+      padding: 0 24px;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      margin: 0 12px;
+    }
+
+    .button--red {
+      background-color: #c0392b;
+    }
+
+    .button:hover {
+      filter: brightness(1.25);
+    }
+
+    .button:active {
+      transform: translate(0, 1px);
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+  <script src="./dist/index.js"></script>
+  <script src="./script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</body>
+</html>
