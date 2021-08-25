@@ -4,7 +4,7 @@ import typescript from '@rollup/plugin-typescript';
 export default {
   input: 'src/index.ts',
   output: {
-    dir: 'dist',
+    dir: 'public/dist',
     format: 'umd',
     name: 'floodfillPathfinder'
   },
