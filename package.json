@@ -10,6 +10,6 @@
     "typescript": "^4.3.5"
   },
   "scripts": {
-    "build": "rollup"
+    "build": "rollup --config"
   }
 }
