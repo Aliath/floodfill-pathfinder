@@ -52,7 +52,7 @@ describe('floodfill', () => {
     expect(floodfill).toBeDefined();
   });
 
-  it('finds a paths for predefined matrixes', () => {
+  it('finds a path for predefined matrixes', () => {
     successEntries.forEach(({ matrix, startPoint, endPoint }) => {
       let lastResult = null;
 
@@ -64,7 +64,7 @@ describe('floodfill', () => {
     });
   });
 
-  it('does not find a paths for predefined matrixes', () => {
+  it('does not find any paths for predefined matrixes', () => {
     failEntries.forEach(({ matrix, startPoint, endPoint }) => {
       let lastResult = null;
 
